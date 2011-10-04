@@ -1,0 +1,18 @@
+Name: xorg-x11-proto-xf86driproto
+Summary: X.Org X11 Protocol xf86driproto
+Description: |
+    This extension defines a protocol to allow user applications to access
+    the video hardware without requiring data to be passed through the X server.
+Version: 2.1.1
+Release: 0
+Group: Development/System
+License: MIT
+URL: http://www.x.org
+Sources:
+    - http://xorg.freedesktop.org/releases/individual/proto/xf86driproto-%{version}.tar.bz2
+
+Provides: 
+    - xf86driproto
+Configure: configure
+ConfigOptions:
+    - --libdir=%{_datadir}
